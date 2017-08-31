@@ -1,0 +1,96 @@
+Information: Building the design 'stack' instantiated from design 'datapath' with
+	the parameters "Nbit=32,Nwords=256". (HDL-193)
+Warning: Can't find the design 'stack'
+	in the library 'WORK'. (LBR-1)
+Information: Building the design 'DRAM' instantiated from design 'datapath' with
+	the parameters "N=4096". (HDL-193)
+Warning: Can't find the design 'DRAM'
+	in the library 'WORK'. (LBR-1)
+Warning: Unable to resolve reference 'stack' in 'datapath'. (LINK-5)
+Warning: Unable to resolve reference 'DRAM' in 'datapath'. (LINK-5)
+Warning: Design 'dlx' has '2' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Information: Updating design information... (UID-85)
+Warning: Design 'dlx' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : dlx
+Version: Z-2007.03-SP1
+Date   : Mon Jul 17 01:44:00 2017
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: DTP/cnt/i_reg[0]
+              (rising edge-triggered flip-flop clocked by Clk)
+  Endpoint: DTP/cnt/tc_reg
+            (rising edge-triggered flip-flop clocked by Clk)
+  Path Group: Clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock Clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  DTP/cnt/i_reg[0]/CK (DFFR_X1)                           0.00 #     0.00 r
+  DTP/cnt/i_reg[0]/Q (DFFR_X1)                            0.09       0.09 f
+  DTP/cnt/sub_19/A[0] (counter_DW01_dec_0)                0.00       0.09 f
+  DTP/cnt/sub_19/U32/ZN (OR2_X1)                          0.07       0.16 f
+  DTP/cnt/sub_19/U77/ZN (NOR2_X1)                         0.05       0.21 r
+  DTP/cnt/sub_19/U92/ZN (INV_X1)                          0.03       0.24 f
+  DTP/cnt/sub_19/U2/ZN (OR2_X1)                           0.06       0.30 f
+  DTP/cnt/sub_19/U1/ZN (OR2_X1)                           0.07       0.37 f
+  DTP/cnt/sub_19/U78/ZN (NOR2_X1)                         0.05       0.42 r
+  DTP/cnt/sub_19/U99/ZN (INV_X1)                          0.03       0.45 f
+  DTP/cnt/sub_19/U3/ZN (OR2_X2)                           0.06       0.52 f
+  DTP/cnt/sub_19/U80/ZN (NOR2_X1)                         0.04       0.56 r
+  DTP/cnt/sub_19/U81/ZN (AND2_X2)                         0.05       0.61 r
+  DTP/cnt/sub_19/U112/ZN (NAND2_X1)                       0.03       0.64 f
+  DTP/cnt/sub_19/U31/ZN (NOR2_X1)                         0.03       0.68 r
+  DTP/cnt/sub_19/U4/ZN (AND2_X1)                          0.05       0.73 r
+  DTP/cnt/sub_19/U85/ZN (NAND2_X1)                        0.04       0.77 f
+  DTP/cnt/sub_19/U23/ZN (NOR2_X1)                         0.05       0.82 r
+  DTP/cnt/sub_19/U22/ZN (AND2_X1)                         0.06       0.88 r
+  DTP/cnt/sub_19/U79/ZN (NAND2_X1)                        0.04       0.91 f
+  DTP/cnt/sub_19/U5/ZN (INV_X1)                           0.03       0.95 r
+  DTP/cnt/sub_19/U7/ZN (NAND2_X1)                         0.04       0.99 f
+  DTP/cnt/sub_19/U19/ZN (NOR2_X1)                         0.06       1.05 r
+  DTP/cnt/sub_19/U9/ZN (AND2_X1)                          0.07       1.11 r
+  DTP/cnt/sub_19/U37/ZN (NAND2_X1)                        0.03       1.15 f
+  DTP/cnt/sub_19/U36/ZN (NOR2_X1)                         0.06       1.20 r
+  DTP/cnt/sub_19/U91/ZN (NAND2_X1)                        0.05       1.25 f
+  DTP/cnt/sub_19/U25/ZN (NOR2_X1)                         0.07       1.32 r
+  DTP/cnt/sub_19/U74/ZN (NAND2_X1)                        0.05       1.36 f
+  DTP/cnt/sub_19/U29/ZN (NOR2_X1)                         0.05       1.42 r
+  DTP/cnt/sub_19/U48/Z (XOR2_X1)                          0.04       1.46 f
+  DTP/cnt/sub_19/SUM[30] (counter_DW01_dec_0)             0.00       1.46 f
+  DTP/cnt/U85/ZN (NOR3_X1)                                0.05       1.51 r
+  DTP/cnt/U93/ZN (NAND4_X1)                               0.05       1.56 f
+  DTP/cnt/U86/ZN (NOR2_X1)                                0.04       1.60 r
+  DTP/cnt/U90/ZN (NOR2_X1)                                0.02       1.62 f
+  DTP/cnt/tc_reg/D (DFFS_X1)                              0.01       1.63 f
+  data arrival time                                                  1.63
+
+  clock Clk (rise edge)                                   1.70       1.70
+  clock network delay (ideal)                             0.00       1.70
+  DTP/cnt/tc_reg/CK (DFFS_X1)                             0.00       1.70 r
+  library setup time                                     -0.04       1.66
+  data required time                                                 1.66
+  --------------------------------------------------------------------------
+  data required time                                                 1.66
+  data arrival time                                                 -1.63
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.03
+
+
+1

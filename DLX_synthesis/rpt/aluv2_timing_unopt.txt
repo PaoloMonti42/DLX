@@ -1,0 +1,136 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : alu
+Version: Z-2007.03-SP1
+Date   : Mon Jul 17 01:26:15 2017
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: A_mul_reg[0]
+              (positive level-sensitive latch)
+  Endpoint: Y1[31] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  alu                5K_hvratio_1_1        NangateOpenCellLibrary
+  Y1[31]             5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  A_mul_reg[0]/G (DLH_X1)                                 0.00       0.00 r
+  A_mul_reg[0]/Q (DLH_X1)                                 0.07       0.07 f
+  U37/Z (CLKBUF_X3)                                       0.15       0.22 f
+  mul/A[0] (booth_mul_N16)                                0.00       0.22 f
+  mul/SHIFTERS_0/A[0] (shift_mul_N16_S0)                  0.00       0.22 f
+  mul/SHIFTERS_0/U39/ZN (NOR2_X1)                         0.11       0.33 r
+  mul/SHIFTERS_0/U37/ZN (NAND2_X1)                        0.05       0.38 f
+  mul/SHIFTERS_0/U36/ZN (NOR3_X1)                         0.09       0.47 r
+  mul/SHIFTERS_0/U34/ZN (NAND2_X1)                        0.04       0.51 f
+  mul/SHIFTERS_0/U33/ZN (OR2_X1)                          0.07       0.58 f
+  mul/SHIFTERS_0/U32/ZN (NOR3_X1)                         0.09       0.67 r
+  mul/SHIFTERS_0/U30/ZN (NAND2_X1)                        0.04       0.71 f
+  mul/SHIFTERS_0/U29/ZN (NOR2_X1)                         0.06       0.77 r
+  mul/SHIFTERS_0/U27/ZN (NAND2_X1)                        0.04       0.81 f
+  mul/SHIFTERS_0/U26/ZN (OR2_X1)                          0.07       0.87 f
+  mul/SHIFTERS_0/U25/ZN (OR3_X1)                          0.10       0.97 f
+  mul/SHIFTERS_0/U24/ZN (NAND2_X1)                        0.04       1.01 r
+  mul/SHIFTERS_0/U2/ZN (INV_X2)                           0.08       1.09 f
+  mul/SHIFTERS_0/C[20] (shift_mul_N16_S0)                 0.00       1.09 f
+  mul/MUXGEN_0/C[20] (mux_N32_0)                          0.00       1.09 f
+  mul/MUXGEN_0/U65/ZN (AOI222_X1)                         0.13       1.22 r
+  mul/MUXGEN_0/U64/ZN (NAND2_X1)                          0.04       1.26 f
+  mul/MUXGEN_0/O[20] (mux_N32_0)                          0.00       1.26 f
+  mul/Add1IL/A[20] (CSA_Nbits32_0)                        0.00       1.26 f
+  mul/Add1IL/FullAdd_20/A (FA_236)                        0.00       1.26 f
+  mul/Add1IL/FullAdd_20/U4/Z (XOR2_X1)                    0.08       1.34 f
+  mul/Add1IL/FullAdd_20/U3/ZN (AOI22_X1)                  0.06       1.40 r
+  mul/Add1IL/FullAdd_20/U2/ZN (INV_X1)                    0.03       1.43 f
+  mul/Add1IL/FullAdd_20/Co (FA_236)                       0.00       1.43 f
+  mul/Add1IL/Cout[21] (CSA_Nbits32_0)                     0.00       1.43 f
+  mul/Add1IIL/B[21] (CSA_Nbits32_4)                       0.00       1.43 f
+  mul/Add1IIL/FullAdd_21/B (FA_171)                       0.00       1.43 f
+  mul/Add1IIL/FullAdd_21/U4/Z (XOR2_X1)                   0.08       1.51 f
+  mul/Add1IIL/FullAdd_21/U3/ZN (AOI22_X1)                 0.06       1.57 r
+  mul/Add1IIL/FullAdd_21/U2/ZN (INV_X1)                   0.03       1.60 f
+  mul/Add1IIL/FullAdd_21/Co (FA_171)                      0.00       1.60 f
+  mul/Add1IIL/Cout[22] (CSA_Nbits32_4)                    0.00       1.60 f
+  mul/Add1IIIL/B[22] (CSA_Nbits32_2)                      0.00       1.60 f
+  mul/Add1IIIL/FullAdd_22/B (FA_106)                      0.00       1.60 f
+  mul/Add1IIIL/FullAdd_22/U4/Z (XOR2_X1)                  0.08       1.68 f
+  mul/Add1IIIL/FullAdd_22/U3/ZN (AOI22_X1)                0.06       1.74 r
+  mul/Add1IIIL/FullAdd_22/U2/ZN (INV_X1)                  0.03       1.76 f
+  mul/Add1IIIL/FullAdd_22/Co (FA_106)                     0.00       1.76 f
+  mul/Add1IIIL/Cout[23] (CSA_Nbits32_2)                   0.00       1.76 f
+  mul/AddRCA/B[23] (CSA_Nbits32_1)                        0.00       1.76 f
+  mul/AddRCA/FullAdd_23/B (FA_73)                         0.00       1.76 f
+  mul/AddRCA/FullAdd_23/U4/Z (XOR2_X1)                    0.08       1.85 f
+  mul/AddRCA/FullAdd_23/U1/Z (XOR2_X1)                    0.10       1.94 f
+  mul/AddRCA/FullAdd_23/S (FA_73)                         0.00       1.94 f
+  mul/AddRCA/S[23] (CSA_Nbits32_1)                        0.00       1.94 f
+  mul/P4adder/A[23] (cla_adder_N32_1)                     0.00       1.94 f
+  mul/P4adder/CG/A[23] (carry_generator_N32_Nblocks8_1)
+                                                          0.00       1.94 f
+  mul/P4adder/CG/PGnet_23/A (PGnet_block_9)               0.00       1.94 f
+  mul/P4adder/CG/PGnet_23/U1/Z (XOR2_X1)                  0.09       2.03 f
+  mul/P4adder/CG/PGnet_23/pout (PGnet_block_9)            0.00       2.03 f
+  mul/P4adder/CG/PGblock_1_23/pleft (PG_20)               0.00       2.03 f
+  mul/P4adder/CG/PGblock_1_23/U3/ZN (AOI21_X1)            0.05       2.08 r
+  mul/P4adder/CG/PGblock_1_23/U2/ZN (INV_X1)              0.02       2.11 f
+  mul/P4adder/CG/PGblock_1_23/gout (PG_20)                0.00       2.11 f
+  mul/P4adder/CG/PGblock_2_23/gleft (PG_14)               0.00       2.11 f
+  mul/P4adder/CG/PGblock_2_23/U3/ZN (AOI21_X1)            0.05       2.16 r
+  mul/P4adder/CG/PGblock_2_23/U2/ZN (INV_X1)              0.02       2.18 f
+  mul/P4adder/CG/PGblock_2_23/gout (PG_14)                0.00       2.18 f
+  mul/P4adder/CG/PGblock_3_23/gleft (PG_4_1)              0.00       2.18 f
+  mul/P4adder/CG/PGblock_3_23/U3/ZN (AOI21_X1)            0.05       2.23 r
+  mul/P4adder/CG/PGblock_3_23/U2/ZN (INV_X1)              0.03       2.26 f
+  mul/P4adder/CG/PGblock_3_23/gout (PG_4_1)               0.00       2.26 f
+  mul/P4adder/CG/PGblock_4_27/gright (PG_1)               0.00       2.26 f
+  mul/P4adder/CG/PGblock_4_27/U3/ZN (AOI21_X1)            0.04       2.31 r
+  mul/P4adder/CG/PGblock_4_27/U2/ZN (INV_X1)              0.02       2.33 f
+  mul/P4adder/CG/PGblock_4_27/gout (PG_1)                 0.00       2.33 f
+  mul/P4adder/CG/Gblock_5_27/gleft (G_4)                  0.00       2.33 f
+  mul/P4adder/CG/Gblock_5_27/U2/ZN (AOI21_X1)             0.05       2.38 r
+  mul/P4adder/CG/Gblock_5_27/U1/ZN (INV_X1)               0.05       2.43 f
+  mul/P4adder/CG/Gblock_5_27/gout (G_4)                   0.00       2.43 f
+  mul/P4adder/CG/Cout[7] (carry_generator_N32_Nblocks8_1)
+                                                          0.00       2.43 f
+  mul/P4adder/SG/Carry[7] (sum_generator_Nbits32_Nblocks8_1)
+                                                          0.00       2.43 f
+  mul/P4adder/SG/CS_7/Ci (carry_select_N4_1)              0.00       2.43 f
+  mul/P4adder/SG/CS_7/MUX/SEL (MUX21_GENERIC_N4_1)        0.00       2.43 f
+  mul/P4adder/SG/CS_7/MUX/M_3/S (MUX21_1)                 0.00       2.43 f
+  mul/P4adder/SG/CS_7/MUX/M_3/UND1/B (ND2_3)              0.00       2.43 f
+  mul/P4adder/SG/CS_7/MUX/M_3/UND1/U1/ZN (NAND2_X1)       0.04       2.47 r
+  mul/P4adder/SG/CS_7/MUX/M_3/UND1/Y (ND2_3)              0.00       2.47 r
+  mul/P4adder/SG/CS_7/MUX/M_3/UND3/A (ND2_1)              0.00       2.47 r
+  mul/P4adder/SG/CS_7/MUX/M_3/UND3/U1/ZN (NAND2_X1)       0.03       2.50 f
+  mul/P4adder/SG/CS_7/MUX/M_3/UND3/Y (ND2_1)              0.00       2.50 f
+  mul/P4adder/SG/CS_7/MUX/M_3/Y (MUX21_1)                 0.00       2.50 f
+  mul/P4adder/SG/CS_7/MUX/Y[3] (MUX21_GENERIC_N4_1)       0.00       2.50 f
+  mul/P4adder/SG/CS_7/S[3] (carry_select_N4_1)            0.00       2.50 f
+  mul/P4adder/SG/S[31] (sum_generator_Nbits32_Nblocks8_1)
+                                                          0.00       2.50 f
+  mul/P4adder/Sum[31] (cla_adder_N32_1)                   0.00       2.50 f
+  mul/Y[31] (booth_mul_N16)                               0.00       2.50 f
+  muxy1/mul[31] (mux_alu)                                 0.00       2.50 f
+  muxy1/U116/ZN (AOI222_X1)                               0.07       2.56 r
+  muxy1/U115/ZN (NAND2_X1)                                0.03       2.60 f
+  muxy1/out_mux_tri[31]/Z (TBUF_X1)                       0.05       2.65 f
+  muxy1/out_mux[31] (mux_alu)                             0.00       2.65 f
+  Y1[31] (out)                                            0.00       2.65 f
+  data arrival time                                                  2.65
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

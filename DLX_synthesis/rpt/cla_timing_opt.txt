@@ -1,0 +1,91 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : cla_adder_N32
+Version: Z-2007.03-SP1
+Date   : Mon Jul 17 01:14:52 2017
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: A[0] (level-sensitive input port)
+  Endpoint: Sum[21] (output port)
+  Path Group: default
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  A[0]               5K_hvratio_1_1        NangateOpenCellLibrary
+  cla_adder_N32      5K_hvratio_1_1        NangateOpenCellLibrary
+  Sum[21]            5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                    0.07       0.07 r
+  A[0] (in)                                               0.00       0.07 r
+  CG/A[0] (carry_generator_N32_Nblocks8)                  0.00       0.07 r
+  CG/PGnet_Cin_0/A (PGnet_block_0)                        0.00       0.07 r
+  CG/PGnet_Cin_0/U3/ZN (NAND2_X1)                         0.03       0.10 f
+  CG/PGnet_Cin_0/U1/ZN (OAI21_X1)                         0.03       0.13 r
+  CG/PGnet_Cin_0/pout (PGnet_block_0)                     0.00       0.13 r
+  CG/GCin_0/pleft (G_0)                                   0.00       0.13 r
+  CG/GCin_0/U1/ZN (NAND2_X1)                              0.03       0.16 f
+  CG/GCin_0/U2/ZN (NAND2_X1)                              0.03       0.18 r
+  CG/GCin_0/gout (G_0)                                    0.00       0.18 r
+  CG/Gblock_1_1/gright (G_9)                              0.00       0.18 r
+  CG/Gblock_1_1/U2/ZN (INV_X1)                            0.02       0.20 f
+  CG/Gblock_1_1/U1/ZN (AOI21_X1)                          0.04       0.24 r
+  CG/Gblock_1_1/gout (G_9)                                0.00       0.24 r
+  CG/Gblock_2_3/gright (G_8)                              0.00       0.24 r
+  CG/Gblock_2_3/U1/ZN (AOI21_X1)                          0.03       0.27 f
+  CG/Gblock_2_3/U2/ZN (INV_X1)                            0.03       0.30 r
+  CG/Gblock_2_3/gout (G_8)                                0.00       0.30 r
+  CG/Gblock_3_7/gright (G_7)                              0.00       0.30 r
+  CG/Gblock_3_7/U2/ZN (NAND2_X1)                          0.03       0.33 f
+  CG/Gblock_3_7/U1/ZN (NAND2_X1)                          0.03       0.36 r
+  CG/Gblock_3_7/gout (G_7)                                0.00       0.36 r
+  CG/Gblock_4_15/gright (G_5)                             0.00       0.36 r
+  CG/Gblock_4_15/U1/ZN (AOI21_X1)                         0.03       0.39 f
+  CG/Gblock_4_15/U2/ZN (INV_X1)                           0.04       0.43 r
+  CG/Gblock_4_15/gout (G_5)                               0.00       0.43 r
+  CG/Gblock_5_19/gright (G_4)                             0.00       0.43 r
+  CG/Gblock_5_19/U1/ZN (AOI21_X1)                         0.03       0.46 f
+  CG/Gblock_5_19/U2/ZN (INV_X1)                           0.06       0.53 r
+  CG/Gblock_5_19/gout (G_4)                               0.00       0.53 r
+  CG/Cout[5] (carry_generator_N32_Nblocks8)               0.00       0.53 r
+  SG/Carry[5] (sum_generator_Nbits32_Nblocks8)            0.00       0.53 r
+  SG/CS_5/Ci (carry_select_N4_3)                          0.00       0.53 r
+  SG/CS_5/MUX/SEL (MUX21_GENERIC_N4_3)                    0.00       0.53 r
+  SG/CS_5/MUX/M_1/S (MUX21_11)                            0.00       0.53 r
+  SG/CS_5/MUX/M_1/UIV/A (IV_11)                           0.00       0.53 r
+  SG/CS_5/MUX/M_1/UIV/U1/ZN (INV_X1)                      0.03       0.56 f
+  SG/CS_5/MUX/M_1/UIV/Y (IV_11)                           0.00       0.56 f
+  SG/CS_5/MUX/M_1/UND2/B (ND2_32)                         0.00       0.56 f
+  SG/CS_5/MUX/M_1/UND2/U1/ZN (NAND2_X1)                   0.03       0.59 r
+  SG/CS_5/MUX/M_1/UND2/Y (ND2_32)                         0.00       0.59 r
+  SG/CS_5/MUX/M_1/UND3/B (ND2_31)                         0.00       0.59 r
+  SG/CS_5/MUX/M_1/UND3/U1/ZN (NAND2_X1)                   0.02       0.61 f
+  SG/CS_5/MUX/M_1/UND3/Y (ND2_31)                         0.00       0.61 f
+  SG/CS_5/MUX/M_1/Y (MUX21_11)                            0.00       0.61 f
+  SG/CS_5/MUX/Y[1] (MUX21_GENERIC_N4_3)                   0.00       0.61 f
+  SG/CS_5/S[1] (carry_select_N4_3)                        0.00       0.61 f
+  SG/S[21] (sum_generator_Nbits32_Nblocks8)               0.00       0.61 f
+  Sum[21] (out)                                           0.00       0.61 f
+  data arrival time                                                  0.61
+
+  max_delay                                               0.55       0.55
+  output external delay                                  -0.01       0.54
+  data required time                                                 0.54
+  --------------------------------------------------------------------------
+  data required time                                                 0.54
+  data arrival time                                                 -0.61
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.07
+
+
+1

@@ -1,0 +1,203 @@
+Information: Building the design 'stack' instantiated from design 'datapath' with
+	the parameters "Nbit=32,Nwords=256". (HDL-193)
+Warning: Can't find the design 'stack'
+	in the library 'WORK'. (LBR-1)
+Information: Building the design 'DRAM' instantiated from design 'datapath' with
+	the parameters "N=4096". (HDL-193)
+Warning: Can't find the design 'DRAM'
+	in the library 'WORK'. (LBR-1)
+Warning: Unable to resolve reference 'stack' in 'datapath'. (LINK-5)
+Warning: Unable to resolve reference 'DRAM' in 'datapath'. (LINK-5)
+Warning: Design 'dlx' has '2' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Information: Updating design information... (UID-85)
+Warning: Design 'dlx' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : dlx
+Version: Z-2007.03-SP1
+Date   : Sun Jul 16 17:01:09 2017
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: DTP/FWDAREG2/d_out_reg
+              (rising edge-triggered flip-flop clocked by Clk)
+  Endpoint: DTP/PC/d_out_reg[23]
+            (rising edge-triggered flip-flop clocked by Clk)
+  Path Group: Clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock Clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  DTP/FWDAREG2/d_out_reg/CK (SDFF_X1)                     0.00 #     0.00 r
+  DTP/FWDAREG2/d_out_reg/Q (SDFF_X1)                      0.07       0.07 f
+  DTP/FWDAREG2/d_out (ff_14)                              0.00       0.07 f
+  DTP/FWDAMUX/sel[1] (mux_fwd_0)                          0.00       0.07 f
+  DTP/FWDAMUX/U32/ZN (INV_X1)                             0.04       0.10 r
+  DTP/FWDAMUX/U2/ZN (AND2_X2)                             0.05       0.15 r
+  DTP/FWDAMUX/U44/ZN (AND2_X1)                            0.05       0.20 r
+  DTP/FWDAMUX/U45/ZN (AOI22_X1)                           0.03       0.23 f
+  DTP/FWDAMUX/U109/ZN (NAND3_X1)                          0.04       0.26 r
+  DTP/FWDAMUX/OPF[11] (mux_fwd_0)                         0.00       0.26 r
+  DTP/U383/Z (BUF_X4)                                     0.11       0.37 r
+  DTP/ALU_block/A[11] (alu)                               0.00       0.37 r
+  DTP/ALU_block/mul/A[11] (booth_mul_N16)                 0.00       0.37 r
+  DTP/ALU_block/mul/SHIFTERS_1/A[11] (shift_mul_N16_S2)
+                                                          0.00       0.37 r
+  DTP/ALU_block/mul/SHIFTERS_1/U11/ZN (OR2_X1)            0.06       0.43 r
+  DTP/ALU_block/mul/SHIFTERS_1/U50/ZN (NOR2_X1)           0.02       0.46 f
+  DTP/ALU_block/mul/SHIFTERS_1/U49/ZN (NAND2_X1)          0.03       0.49 r
+  DTP/ALU_block/mul/SHIFTERS_1/U19/ZN (OR2_X1)            0.04       0.52 r
+  DTP/ALU_block/mul/SHIFTERS_1/U24/ZN (NOR2_X1)           0.02       0.55 f
+  DTP/ALU_block/mul/SHIFTERS_1/U22/ZN (NOR2_X1)           0.11       0.66 r
+  DTP/ALU_block/mul/SHIFTERS_1/E[19] (shift_mul_N16_S2)
+                                                          0.00       0.66 r
+  DTP/ALU_block/mul/MUXGEN_1/E[19] (mux_N32_7)            0.00       0.66 r
+  DTP/ALU_block/mul/MUXGEN_1/U45/ZN (NAND2_X1)            0.04       0.70 f
+  DTP/ALU_block/mul/MUXGEN_1/U43/ZN (AND3_X1)             0.05       0.75 f
+  DTP/ALU_block/mul/MUXGEN_1/U206/ZN (NAND2_X1)           0.03       0.78 r
+  DTP/ALU_block/mul/MUXGEN_1/O[19] (mux_N32_7)            0.00       0.78 r
+  DTP/ALU_block/mul/Add1IL/B[19] (CSA_Nbits32_0)          0.00       0.78 r
+  DTP/ALU_block/mul/Add1IL/FullAdd_19/B (FA_237)          0.00       0.78 r
+  DTP/ALU_block/mul/Add1IL/FullAdd_19/U4/Z (XOR2_X1)      0.08       0.86 r
+  DTP/ALU_block/mul/Add1IL/FullAdd_19/U3/Z (XOR2_X1)      0.08       0.94 r
+  DTP/ALU_block/mul/Add1IL/FullAdd_19/S (FA_237)          0.00       0.94 r
+  DTP/ALU_block/mul/Add1IL/S[19] (CSA_Nbits32_0)          0.00       0.94 r
+  DTP/ALU_block/mul/Add1IIL/A[19] (CSA_Nbits32_4)         0.00       0.94 r
+  DTP/ALU_block/mul/Add1IIL/FullAdd_19/A (FA_173)         0.00       0.94 r
+  DTP/ALU_block/mul/Add1IIL/FullAdd_19/U4/Z (XOR2_X1)     0.08       1.02 r
+  DTP/ALU_block/mul/Add1IIL/FullAdd_19/U5/ZN (AOI22_X1)
+                                                          0.04       1.07 f
+  DTP/ALU_block/mul/Add1IIL/FullAdd_19/U6/ZN (INV_X1)     0.03       1.10 r
+  DTP/ALU_block/mul/Add1IIL/FullAdd_19/Co (FA_173)        0.00       1.10 r
+  DTP/ALU_block/mul/Add1IIL/Cout[20] (CSA_Nbits32_4)      0.00       1.10 r
+  DTP/ALU_block/mul/Add1IIIL/B[20] (CSA_Nbits32_2)        0.00       1.10 r
+  DTP/ALU_block/mul/Add1IIIL/FullAdd_20/B (FA_108)        0.00       1.10 r
+  DTP/ALU_block/mul/Add1IIIL/FullAdd_20/U4/Z (XOR2_X1)
+                                                          0.08       1.18 r
+  DTP/ALU_block/mul/Add1IIIL/FullAdd_20/U3/Z (XOR2_X1)
+                                                          0.09       1.27 r
+  DTP/ALU_block/mul/Add1IIIL/FullAdd_20/S (FA_108)        0.00       1.27 r
+  DTP/ALU_block/mul/Add1IIIL/S[20] (CSA_Nbits32_2)        0.00       1.27 r
+  DTP/ALU_block/mul/AddRCA/A[20] (CSA_Nbits32_1)          0.00       1.27 r
+  DTP/ALU_block/mul/AddRCA/FullAdd_20/A (FA_76)           0.00       1.27 r
+  DTP/ALU_block/mul/AddRCA/FullAdd_20/U4/ZN (XNOR2_X1)
+                                                          0.07       1.34 r
+  DTP/ALU_block/mul/AddRCA/FullAdd_20/U6/ZN (XNOR2_X1)
+                                                          0.07       1.41 r
+  DTP/ALU_block/mul/AddRCA/FullAdd_20/S (FA_76)           0.00       1.41 r
+  DTP/ALU_block/mul/AddRCA/S[20] (CSA_Nbits32_1)          0.00       1.41 r
+  DTP/ALU_block/mul/P4adder/A[20] (cla_adder_N32_1)       0.00       1.41 r
+  DTP/ALU_block/mul/P4adder/U18/Z (BUF_X2)                0.05       1.47 r
+  DTP/ALU_block/mul/P4adder/SG/A[20] (sum_generator_Nbits32_Nblocks8_1)
+                                                          0.00       1.47 r
+  DTP/ALU_block/mul/P4adder/SG/CS_5/A[0] (carry_select_N4_3)
+                                                          0.00       1.47 r
+  DTP/ALU_block/mul/P4adder/SG/CS_5/RCA0/A[0] (rca_generic_N4_6)
+                                                          0.00       1.47 r
+  DTP/ALU_block/mul/P4adder/SG/CS_5/RCA0/FAI_1/A (FA_24)
+                                                          0.00       1.47 r
+  DTP/ALU_block/mul/P4adder/SG/CS_5/RCA0/FAI_1/U4/Z (XOR2_X1)
+                                                          0.08       1.55 r
+  DTP/ALU_block/mul/P4adder/SG/CS_5/RCA0/FAI_1/U2/ZN (AOI22_X1)
+                                                          0.04       1.59 f
+  DTP/ALU_block/mul/P4adder/SG/CS_5/RCA0/FAI_1/U1/ZN (INV_X1)
+                                                          0.04       1.63 r
+  DTP/ALU_block/mul/P4adder/SG/CS_5/RCA0/FAI_1/Co (FA_24)
+                                                          0.00       1.63 r
+  DTP/ALU_block/mul/P4adder/SG/CS_5/RCA0/FAI_2/Ci (FA_23)
+                                                          0.00       1.63 r
+  DTP/ALU_block/mul/P4adder/SG/CS_5/RCA0/FAI_2/U2/ZN (AOI22_X1)
+                                                          0.04       1.67 f
+  DTP/ALU_block/mul/P4adder/SG/CS_5/RCA0/FAI_2/U1/ZN (INV_X1)
+                                                          0.04       1.70 r
+  DTP/ALU_block/mul/P4adder/SG/CS_5/RCA0/FAI_2/Co (FA_23)
+                                                          0.00       1.70 r
+  DTP/ALU_block/mul/P4adder/SG/CS_5/RCA0/FAI_3/Ci (FA_22)
+                                                          0.00       1.70 r
+  DTP/ALU_block/mul/P4adder/SG/CS_5/RCA0/FAI_3/U5/ZN (NAND2_X1)
+                                                          0.03       1.73 f
+  DTP/ALU_block/mul/P4adder/SG/CS_5/RCA0/FAI_3/U1/ZN (NAND2_X1)
+                                                          0.04       1.77 r
+  DTP/ALU_block/mul/P4adder/SG/CS_5/RCA0/FAI_3/Co (FA_22)
+                                                          0.00       1.77 r
+  DTP/ALU_block/mul/P4adder/SG/CS_5/RCA0/FAI_4/Ci (FA_21)
+                                                          0.00       1.77 r
+  DTP/ALU_block/mul/P4adder/SG/CS_5/RCA0/FAI_4/U3/Z (XOR2_X1)
+                                                          0.07       1.84 r
+  DTP/ALU_block/mul/P4adder/SG/CS_5/RCA0/FAI_4/S (FA_21)
+                                                          0.00       1.84 r
+  DTP/ALU_block/mul/P4adder/SG/CS_5/RCA0/S[3] (rca_generic_N4_6)
+                                                          0.00       1.84 r
+  DTP/ALU_block/mul/P4adder/SG/CS_5/MUX/B[3] (MUX21_GENERIC_N4_3)
+                                                          0.00       1.84 r
+  DTP/ALU_block/mul/P4adder/SG/CS_5/MUX/M_3/B (MUX21_9)
+                                                          0.00       1.84 r
+  DTP/ALU_block/mul/P4adder/SG/CS_5/MUX/M_3/UND2/A (ND2_26)
+                                                          0.00       1.84 r
+  DTP/ALU_block/mul/P4adder/SG/CS_5/MUX/M_3/UND2/U1/ZN (NAND2_X1)
+                                                          0.03       1.87 f
+  DTP/ALU_block/mul/P4adder/SG/CS_5/MUX/M_3/UND2/Y (ND2_26)
+                                                          0.00       1.87 f
+  DTP/ALU_block/mul/P4adder/SG/CS_5/MUX/M_3/UND3/B (ND2_25)
+                                                          0.00       1.87 f
+  DTP/ALU_block/mul/P4adder/SG/CS_5/MUX/M_3/UND3/U1/ZN (NAND2_X1)
+                                                          0.03       1.89 r
+  DTP/ALU_block/mul/P4adder/SG/CS_5/MUX/M_3/UND3/Y (ND2_25)
+                                                          0.00       1.89 r
+  DTP/ALU_block/mul/P4adder/SG/CS_5/MUX/M_3/Y (MUX21_9)
+                                                          0.00       1.89 r
+  DTP/ALU_block/mul/P4adder/SG/CS_5/MUX/Y[3] (MUX21_GENERIC_N4_3)
+                                                          0.00       1.89 r
+  DTP/ALU_block/mul/P4adder/SG/CS_5/S[3] (carry_select_N4_3)
+                                                          0.00       1.89 r
+  DTP/ALU_block/mul/P4adder/SG/S[23] (sum_generator_Nbits32_Nblocks8_1)
+                                                          0.00       1.89 r
+  DTP/ALU_block/mul/P4adder/Sum[23] (cla_adder_N32_1)     0.00       1.89 r
+  DTP/ALU_block/mul/Y[23] (booth_mul_N16)                 0.00       1.89 r
+  DTP/ALU_block/muxy1/mul[23] (mux_alu)                   0.00       1.89 r
+  DTP/ALU_block/muxy1/U265/ZN (NAND2_X1)                  0.02       1.92 f
+  DTP/ALU_block/muxy1/U161/ZN (AND2_X1)                   0.04       1.96 f
+  DTP/ALU_block/muxy1/U160/ZN (TINV_X1)                   0.05       2.01 r
+  DTP/ALU_block/muxy1/out_mux[23] (mux_alu)               0.00       2.01 r
+  DTP/ALU_block/Y1[23] (alu)                              0.00       2.01 r
+  DTP/U473/ZN (INV_X1)                                    0.02       2.03 f
+  DTP/U63/Z (MUX2_X1)                                     0.07       2.10 f
+  DTP/U475/ZN (INV_X1)                                    0.03       2.13 r
+  DTP/pc_mux/E[23] (mux_pc)                               0.00       2.13 r
+  DTP/pc_mux/U19/ZN (AOI21_X1)                            0.03       2.16 f
+  DTP/pc_mux/U364/ZN (NAND2_X1)                           0.03       2.18 r
+  DTP/pc_mux/Y_tri[23]/Z (TBUF_X1)                        0.04       2.22 r
+  DTP/pc_mux/Y[23] (mux_pc)                               0.00       2.22 r
+  DTP/PC/d_in[23] (reg_en_N32)                            0.00       2.22 r
+  DTP/PC/U83/ZN (NAND2_X1)                                0.02       2.25 f
+  DTP/PC/U84/ZN (NAND2_X1)                                0.03       2.28 r
+  DTP/PC/d_out_reg[23]/D (DFF_X1)                         0.01       2.29 r
+  data arrival time                                                  2.29
+
+  clock Clk (rise edge)                                   1.70       1.70
+  clock network delay (ideal)                             0.00       1.70
+  DTP/PC/d_out_reg[23]/CK (DFF_X1)                        0.00       1.70 r
+  library setup time                                     -0.03       1.67
+  data required time                                                 1.67
+  --------------------------------------------------------------------------
+  data required time                                                 1.67
+  data arrival time                                                 -2.29
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.62
+
+
+1

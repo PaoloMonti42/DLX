@@ -1,0 +1,7 @@
+mkdir -p work
+vlib work
+
+for file in $(find . -type f -name "*.vhd" | sort);
+do
+	vcom $file
+done 

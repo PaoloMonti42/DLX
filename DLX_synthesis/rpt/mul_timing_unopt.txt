@@ -1,0 +1,129 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : booth_mul_N16
+Version: Z-2007.03-SP1
+Date   : Mon Jul 17 01:15:56 2017
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: A[1] (level-sensitive input port)
+  Endpoint: Y[31] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  A[1]               5K_hvratio_1_1        NangateOpenCellLibrary
+  booth_mul_N16      5K_hvratio_1_1        NangateOpenCellLibrary
+  Y[31]              5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 f
+  A[1] (in)                                               0.00       0.00 f
+  SHIFTERS_0/A[1] (shift_mul_N16_S0)                      0.00       0.00 f
+  SHIFTERS_0/U40/ZN (NOR3_X1)                             0.11       0.11 r
+  SHIFTERS_0/U38/ZN (NAND2_X1)                            0.04       0.15 f
+  SHIFTERS_0/U37/ZN (NOR2_X1)                             0.06       0.21 r
+  SHIFTERS_0/U35/ZN (NAND2_X1)                            0.04       0.24 f
+  SHIFTERS_0/U34/ZN (NOR2_X1)                             0.05       0.30 r
+  SHIFTERS_0/U32/ZN (NAND2_X1)                            0.04       0.34 f
+  SHIFTERS_0/U31/ZN (NOR2_X1)                             0.05       0.39 r
+  SHIFTERS_0/U28/ZN (NAND2_X1)                            0.04       0.43 f
+  SHIFTERS_0/U26/ZN (NOR2_X1)                             0.05       0.49 r
+  SHIFTERS_0/U23/ZN (NAND2_X1)                            0.04       0.52 f
+  SHIFTERS_0/U21/ZN (NOR2_X1)                             0.05       0.58 r
+  SHIFTERS_0/U18/ZN (NAND2_X1)                            0.04       0.62 f
+  SHIFTERS_0/U16/ZN (OR2_X1)                              0.06       0.68 f
+  SHIFTERS_0/U15/ZN (NOR2_X1)                             0.08       0.75 r
+  SHIFTERS_0/U2/ZN (NOR2_X4)                              0.10       0.85 f
+  SHIFTERS_0/U14/ZN (INV_X1)                              0.06       0.91 r
+  SHIFTERS_0/U13/ZN (OAI21_X1)                            0.04       0.94 f
+  SHIFTERS_0/C[15] (shift_mul_N16_S0)                     0.00       0.94 f
+  MUXGEN_0/C[15] (mux_N32_0)                              0.00       0.94 f
+  MUXGEN_0/U82/ZN (AOI222_X1)                             0.10       1.05 r
+  MUXGEN_0/U81/ZN (NAND2_X1)                              0.04       1.09 f
+  MUXGEN_0/O[15] (mux_N32_0)                              0.00       1.09 f
+  Add1IL/A[15] (CSA_Nbits32_0)                            0.00       1.09 f
+  Add1IL/FullAdd_15/A (FA_241)                            0.00       1.09 f
+  Add1IL/FullAdd_15/U4/Z (XOR2_X1)                        0.06       1.15 r
+  Add1IL/FullAdd_15/U1/Z (XOR2_X1)                        0.09       1.24 r
+  Add1IL/FullAdd_15/S (FA_241)                            0.00       1.24 r
+  Add1IL/S[15] (CSA_Nbits32_0)                            0.00       1.24 r
+  Add1IIL/A[15] (CSA_Nbits32_4)                           0.00       1.24 r
+  Add1IIL/FullAdd_15/A (FA_177)                           0.00       1.24 r
+  Add1IIL/FullAdd_15/U4/Z (XOR2_X1)                       0.09       1.32 r
+  Add1IIL/FullAdd_15/U1/Z (XOR2_X1)                       0.09       1.41 r
+  Add1IIL/FullAdd_15/S (FA_177)                           0.00       1.41 r
+  Add1IIL/S[15] (CSA_Nbits32_4)                           0.00       1.41 r
+  Add1IIIL/A[15] (CSA_Nbits32_2)                          0.00       1.41 r
+  Add1IIIL/FullAdd_15/A (FA_113)                          0.00       1.41 r
+  Add1IIIL/FullAdd_15/U4/Z (XOR2_X1)                      0.09       1.49 r
+  Add1IIIL/FullAdd_15/U1/Z (XOR2_X1)                      0.09       1.58 r
+  Add1IIIL/FullAdd_15/S (FA_113)                          0.00       1.58 r
+  Add1IIIL/S[15] (CSA_Nbits32_2)                          0.00       1.58 r
+  AddRCA/A[15] (CSA_Nbits32_1)                            0.00       1.58 r
+  AddRCA/FullAdd_15/A (FA_81)                             0.00       1.58 r
+  AddRCA/FullAdd_15/U4/Z (XOR2_X1)                        0.09       1.66 r
+  AddRCA/FullAdd_15/U1/Z (XOR2_X1)                        0.13       1.79 r
+  AddRCA/FullAdd_15/S (FA_81)                             0.00       1.79 r
+  AddRCA/S[15] (CSA_Nbits32_1)                            0.00       1.79 r
+  P4adder/A[15] (cla_adder_N32)                           0.00       1.79 r
+  P4adder/CG/A[15] (carry_generator_N32_Nblocks8)         0.00       1.79 r
+  P4adder/CG/PGnet_15/A (PGnet_block_17)                  0.00       1.79 r
+  P4adder/CG/PGnet_15/U1/Z (XOR2_X1)                      0.05       1.85 f
+  P4adder/CG/PGnet_15/pout (PGnet_block_17)               0.00       1.85 f
+  P4adder/CG/PGblock_1_15/pleft (PG_21)                   0.00       1.85 f
+  P4adder/CG/PGblock_1_15/U3/ZN (AOI21_X1)                0.05       1.90 r
+  P4adder/CG/PGblock_1_15/U2/ZN (INV_X1)                  0.02       1.92 f
+  P4adder/CG/PGblock_1_15/gout (PG_21)                    0.00       1.92 f
+  P4adder/CG/PGblock_2_15/gleft (PG_10)                   0.00       1.92 f
+  P4adder/CG/PGblock_2_15/U3/ZN (AOI21_X1)                0.05       1.97 r
+  P4adder/CG/PGblock_2_15/U2/ZN (INV_X1)                  0.02       2.00 f
+  P4adder/CG/PGblock_2_15/gout (PG_10)                    0.00       2.00 f
+  P4adder/CG/PGblock_3_15/gleft (PG_5)                    0.00       2.00 f
+  P4adder/CG/PGblock_3_15/U3/ZN (AOI21_X1)                0.05       2.05 r
+  P4adder/CG/PGblock_3_15/U2/ZN (INV_X1)                  0.02       2.07 f
+  P4adder/CG/PGblock_3_15/gout (PG_5)                     0.00       2.07 f
+  P4adder/CG/Gblock_4_15/gleft (G_5)                      0.00       2.07 f
+  P4adder/CG/Gblock_4_15/U2/ZN (AOI21_X1)                 0.05       2.12 r
+  P4adder/CG/Gblock_4_15/U1/ZN (INV_X1)                   0.06       2.18 f
+  P4adder/CG/Gblock_4_15/gout (G_5)                       0.00       2.18 f
+  P4adder/CG/Gblock_5_27/gright (G_2)                     0.00       2.18 f
+  P4adder/CG/Gblock_5_27/U2/ZN (AOI21_X1)                 0.06       2.24 r
+  P4adder/CG/Gblock_5_27/U1/ZN (INV_X1)                   0.05       2.29 f
+  P4adder/CG/Gblock_5_27/gout (G_2)                       0.00       2.29 f
+  P4adder/CG/Cout[7] (carry_generator_N32_Nblocks8)       0.00       2.29 f
+  P4adder/SG/Carry[7] (sum_generator_Nbits32_Nblocks8)
+                                                          0.00       2.29 f
+  P4adder/SG/CS_7/Ci (carry_select_N4_1)                  0.00       2.29 f
+  P4adder/SG/CS_7/MUX/SEL (MUX21_GENERIC_N4_1)            0.00       2.29 f
+  P4adder/SG/CS_7/MUX/M_3/S (MUX21_1)                     0.00       2.29 f
+  P4adder/SG/CS_7/MUX/M_3/UIV/A (IV_1)                    0.00       2.29 f
+  P4adder/SG/CS_7/MUX/M_3/UIV/U1/ZN (INV_X1)              0.04       2.33 r
+  P4adder/SG/CS_7/MUX/M_3/UIV/Y (IV_1)                    0.00       2.33 r
+  P4adder/SG/CS_7/MUX/M_3/UND2/B (ND2_2)                  0.00       2.33 r
+  P4adder/SG/CS_7/MUX/M_3/UND2/U1/ZN (NAND2_X1)           0.03       2.35 f
+  P4adder/SG/CS_7/MUX/M_3/UND2/Y (ND2_2)                  0.00       2.35 f
+  P4adder/SG/CS_7/MUX/M_3/UND3/B (ND2_1)                  0.00       2.35 f
+  P4adder/SG/CS_7/MUX/M_3/UND3/U1/ZN (NAND2_X1)           0.02       2.38 r
+  P4adder/SG/CS_7/MUX/M_3/UND3/Y (ND2_1)                  0.00       2.38 r
+  P4adder/SG/CS_7/MUX/M_3/Y (MUX21_1)                     0.00       2.38 r
+  P4adder/SG/CS_7/MUX/Y[3] (MUX21_GENERIC_N4_1)           0.00       2.38 r
+  P4adder/SG/CS_7/S[3] (carry_select_N4_1)                0.00       2.38 r
+  P4adder/SG/S[31] (sum_generator_Nbits32_Nblocks8)       0.00       2.38 r
+  P4adder/Sum[31] (cla_adder_N32)                         0.00       2.38 r
+  Y[31] (out)                                             0.00       2.38 r
+  data arrival time                                                  2.38
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

@@ -1,0 +1,8 @@
+ line   address	contents
+    1  00000000  00640828	seq r1,r3,r4	; 3 != 4 => 0
+    2  00000004  00a6102d	sge r2,r5,r6	; 5 !>= 6 => 0
+    3  00000008  0022182c	sle r3,r1,r2	; 0 <= 0 => 1
+    4  0000000c  0022202a	slt r4,r1,r2	; 0 !< 0 => 0
+    5  00000010  00222820	add r5,r1,r2	; 0 + 0 = 0
+    6  00000014  00653025	or  r6,r3,r5	; 1 | 0 = 1
+    8                      ;ok, but notice our registers don't start from 0
